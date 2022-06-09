@@ -11,3 +11,138 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.map {
+  height: "100vh"
+}
+
+.leaflet-container {
+  height: 93vh;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+header {
+  background-color: white;
+  height: 5vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  z-index: 3;
+
+}
+
+header h1 {
+  font-size: 1.4rem;
+  color: rgb(74, 160, 90);
+}
+
+
+/** Search box **/
+
+
+.geosearch,
+.leaflet-touch {
+  border: none !important;
+  outline: none;
+}
+
+.geosearch form {
+  position:fixed;
+  left: 50%;
+  top: 1.5em;
+
+}
+
+
+input.glass {
+  border: none;
+  line-height: 1.2rem;
+  background-color: transparent;
+  color: black;
+  border: 3px solid #3a3939;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.results {
+  background-color: white;
+  border-radius: 8px;
+  padding: .5rem;
+  font-size: 1rem;
+}
+
+.results div {
+  cursor: pointer;
+}
+
+.results div:hover {
+  background-color: rgb(234, 231, 231);
+}
+
+.leaflet-bar-part {
+  background-color: transparent !important;
+}
+
+.reset {
+  display: none !important;
+}
+
+.leaflet-bar-part{
+  background-color: transparent;
+}
+
+
+
+#search:focus,
+#search:active {
+  border: none;
+  outline: none;
+}
+
+/** Trip **/
+.tripContainer {
+  height: 20em;
+  width: 17em;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  left: 2em;
+  top: 10em;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.tripContainer h2 {
+  text-align: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.location svg {
+  padding: 1rem;
+}
+
+.location span {
+  color: rgb(142, 136, 136);
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/** Utils **/
+.link {
+  color: #3f51b5;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: .85rem;
+}
